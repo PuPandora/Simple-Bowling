@@ -39,7 +39,7 @@ public class BallController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Pin")
         {
-            GameManager.instance.CollidePin();
+            StartCoroutine(GameManager.instance.CollidePin());
         }
     }
 }
